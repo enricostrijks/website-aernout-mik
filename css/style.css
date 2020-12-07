@@ -1,0 +1,23 @@
+@font-face {
+  font-family: Century;
+  src: url(../fonts/DSnetStamped.ttf);
+}
+
+p {
+  font-family: Century;
+  text-align: center;
+  color: white;
+  font-size: 240px;
+}
+
+.slide1 {
+  background-color: black;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.slide2 {
+  background: red;
+  background-size: cover;
+  background-repeat: none;
+}
