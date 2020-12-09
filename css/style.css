@@ -3,21 +3,72 @@
   src: url(../fonts/DSnetStamped.ttf);
 }
 
+@font-face {
+  font-family: PlexMono;
+  src: url(../fonts/IBMPlexMono-Regular.ttf);
+}
+
 p {
+  position: absolute;
   font-family: Century;
   text-align: center;
   color: white;
-  font-size: 240px;
+  font-size: 12vw;
+  z-index: 3;
+  opacity: 0.9;
 }
 
-.slide1 {
+.home {
   background-color: black;
   background-size: cover;
   background-repeat: none;
 }
 
-.slide2 {
-  background: red;
+.over {
+  background: black;
   background-size: cover;
   background-repeat: none;
+}
+
+.tentoonstelling {
+  background: black;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.homebg {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  height: auto;
+  mix-blend-mode: screen;
+  opacity: 0.28;
+}
+
+.overbg {
+  position: relative;
+  float: right;
+  margin-right: 0;
+  padding-right: 0;
+  z-index: 0;
+}
+
+.nav {
+  top: 35%;
+  position: absolute;
+  display: inline;
+  list-style-type: none;
+  color: white;
+  font-family: PlexMono;
+  font-size: 18.29px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.9;
+  font-family: PlexMono;
+  font-size: 18.29px;
 }
