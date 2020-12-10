@@ -78,10 +78,10 @@
 .homebg {
   position: relative;
   z-index: 1;
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
   mix-blend-mode: screen;
-  opacity: 0.28;
+  opacity: 0.9;
 }
 
 .recordplayerhome {
