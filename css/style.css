@@ -8,6 +8,16 @@
   src: url(../fonts/IBMPlexMono-Regular.ttf);
 }
 
+@font-face {
+  font-family: PlexSerif;
+  src: url(../fonts/IBMPlexSerif-Regular.ttf);
+}
+
+.container {
+  margin: auto;
+  width: 1400px;
+}
+
 .hometext {
   position: absolute;
   font-family: Century;
@@ -27,16 +37,18 @@
   z-index: 3;
   opacity: 0.9;
   margin-right: 12rem;
+  top: 10%;
 }
 
 .tentext {
   position: absolute;
-  font-family: Century;
-  text-align: center;
+  top: 15%;
   color: white;
-  font-size: 12vw;
   z-index: 3;
   opacity: 0.9;
+  text-transform: uppercase;
+  max-width: 95%;
+  height: auto;
 }
 
 .home {
@@ -52,7 +64,13 @@
 }
 
 .tentoonstelling {
-  background: black;
+  background: url("../img/tentoonstelling_background.jpg");
+  background-size: cover;
+  background-repeat: none;
+}
+
+.footer {
+  background: white;
   background-size: cover;
   background-repeat: none;
 }
@@ -66,6 +84,14 @@
   opacity: 0.28;
 }
 
+.recordplayerhome {
+  top: 62%;
+  position: absolute;
+  z-index: 0;
+  max-width: 5%;
+  height: auto;
+}
+
 .overbg {
   position: relative;
   float: right;
@@ -74,6 +100,17 @@
   z-index: 0;
   max-width: 80%;
   height: auto;
+}
+
+.overparagraph {
+  top: 34%;
+  right: 45%;
+  position: absolute;
+  font-family: PlexMono;
+  font-size: 1vw;
+  max-width: 35%;
+  color: white;
+  text-align: left;
 }
 
 .nav {
@@ -96,14 +133,144 @@
   font-size: 18.29px;
 }
 
+.button {
+  position: absolute;
+  background-color: #fff; /* Green */
+  border: none;
+  color: black;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.readmorebtn {
+  border-radius: 50px;
+  top: 70%;
+  left: 20%;
+  font-family: PlexSerif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.readmorebtnten {
+  border-radius: 50px;
+  top: 85%;
+  left: 38%;
+  font-family: PlexSerif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tenvideo {
+  position: absolute;
+  transform-origin: middle;
+  transform: scale(0.7);
+  max-width: 95%;
+  height: auto;
+  top: 10%;
+}
+
+.tenparagraph {
+  top: 60%;
+  right: 45%;
+  position: absolute;
+  font-family: PlexMono;
+  font-size: 1vw;
+  max-width: 30%;
+  color: white;
+  text-align: left;
+}
+
+.stippelpijl {
+  position: absolute;
+  top: 50%;
+  transform: scale(0.7);
+  max-width: 50%;
+  height: auto;
+}
+
+.bekijk {
+  position: absolute;
+  font-family: PlexSerif;
+}
+
+.bekijkup {
+  top: 35%;
+}
+
+.bekijkdown {
+  bottom: 35%;
+}
+
+.location {
+  font-family: PlexSerif;
+}
+
+.copyright {
+  position: absolute;
+  color: black;
+  bottom: 5%;
+  font-family: PlexSerif;
+}
+
 #fullpage {
   margin-left: -15px;
   margin-right: -15px;
+}
+
+#Record {
+  animation: 9s spin 2s infinite linear;
 }
 
 @media only screen and (max-width: 900px) {
   .overbg {
     max-width: 40%;
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .overbg {
+    max-width: 50%;
+    height: auto;
+  }
+  .bekijkup {
+    top: 25%;
+  }
+
+  .bekijkdown {
+    bottom: 25%;
+  }
+  .tenvideo {
+    top: 5%;
+    max-width: 45%;
+    height: auto;
+  }
+  .tentext {
+    top: 10%;
+    max-width: 32%;
+    height: auto;
+  }
+  .tenparagraph {
+    right: 55%;
+  }
+  .readmorebtnten {
+    left: 28%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

@@ -14,9 +14,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="fullpage">
+    <div id="fullpage" class="">
       <div class="section home">
-          <div class="container-fluid">
             <div class="text-center d-flex align-items-center justify-content-center">
               <div class="nav">
                 <a href="#over">OVER AERNOUT</a>
@@ -24,25 +23,42 @@
               </div>
               <p class="hometext">aernout mik</p>
               <img src="img/home_background.png" class="homebg">
+              <img src="img/recordplayer.png" id="Record" class="recordplayerhome">
             </div>
-          </div>
       </div>
 
       <div class="section over">
-        <div class="container-fluid">
           <div class="text-center d-flex align-items-center justify-content-center">
             <p class="overtext">over aernout</p>
+            <p class="overparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt iaculis porta mauris sed. Suspendisse amet sed quam placerat tortor sit morbi nibh c
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt iaculis porta mauris sed. Suspendisse amet sed quam placerat tortor sit morbi nibh c
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt iaculis porta mauris sed. Suspendisse amet sed quam placerat tortor sit morbi nibh c
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              </p>
+            <button class="button readmorebtn">Lees meer</button>
           </div>
           <img src="img/rectanglewithaernout.png" class="overbg">
-        </div>
       </div>
 
       <div class="section tentoonstelling">
-        <div class="container-fluid">
           <div class="text-center d-flex align-items-center justify-content-center">
-            <p class="tentext">de tentoonstelling</p>
+            <img src="img/tentoonstellingcurve.png" class="tentext">
+            <img src="img/tentoonstelling_video.png" class="tenvideo">
+            <p class="tenparagraph">Lorem iet, consectetur adipiscing elit. Tincidunt iaculis porta mauris sed. Suspendisse amet sed quam placerat tortor sit morbi nibh consequat. Purus dui, 
+              eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt iaculis porta mauris sed. Suspendisse amet sed quam placerat tortor sit morbi nibh consequat. Purus dui, 
+              eu.</p>
+            <button class="button readmorebtnten">Lees meer</button>
+            <img src="img/stippelpijl.png" class="stippelpijl">
           </div>
-        </div>
+      </div>
+
+      <div class="section footer container">
+          <div class="text-center d-flex align-items-center justify-content-center">
+            <img src="img/bekijkhetzelf.png" class="bekijk bekijkup">
+            <p class="location">Paleisstraat 107, 1012 ZL Amsterdam</p>
+            <img src="img/bekijkhetzelfupsidedown.png" class="bekijk bekijkdown">
+            <p class="copyright">COPYRIGHT BYELLOW</p>
+          </div>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -66,7 +82,7 @@
       new fullpage("#fullpage", {
         autoScrolling: true,
         navigation: true,
-        anchors: ["home", "over", "tentoonstelling"],
+        anchors: ["home", "over", "tentoonstelling", "footer"],
       });
     </script>
 
