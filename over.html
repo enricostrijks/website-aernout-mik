@@ -11,37 +11,23 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div id="fullpage">
-      <div class="section home">
-        <div
-          class="container mx-auto text-center relative sm:text-xs md:text-xl"
-        >
-          <div class="nav inline z-10 relative">
-            <a href="#over">OVER AERNOUT</a>
-            <a href="#tentoonstelling">TENTOONSTELLING</a>
-          </div>
-          <p class="hometext mx-auto text-sm md:text-9xl mt-4 md:mt-0">
-            aernout mik
-          </p>
-          <img src="img/home_background.png" class="homebg mx-auto absolute" />
-          <img
-            src="img/recordbox.svg"
-            id="Record"
-            class="recordplayerhome mx-auto mt-6 md:mt-0"
-          />
+      <div class="section overhome relative">
+        <div class="container mx-auto text-center">
+          <img src="img/overhome.png" class="overhomepagebg" />
         </div>
       </div>
-
-      <div class="section over relative">
+      <div class="section overtextpage relative">
         <div class="container mx-auto text-center">
-          <p class="overtext">over aernout</p>
-          <p class="overparagraph mx-auto">
+          <p class="overtextparagraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
             iaculis porta mauris sed. Suspendisse amet sed quam placerat tortor
             sit morbi nibh c Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -51,23 +37,38 @@
             Suspendisse amet sed quam placerat tortor sit morbi nibh c Lorem
             ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <a href="over.html"
-            ><button class="button readmorebtn">Lees meer</button></a
-          >
-          <img
-            src="img/rectanglewithaernout.png"
-            class="overbg absolute float-right"
-          />
+          <img src="img/meisje.png" class="meisje mx-auto" />
         </div>
       </div>
-
-      <div class="section tentoonstelling relative">
+      <div class="section overwork relative">
+        <div class="container mx-auto text-center">
+          <p class="works worksup mx-auto text-center">works</p>
+          <img src="img/ellipse.png" class="cirkel mx-auto" />
+          <img src="img/ellipse2.png" class="cirkel mx-auto" />
+          <img src="img/groepworks.png" class="groepworks mx-auto" />
+          <p class="works worksdown">works</p>
+        </div>
+      </div>
+      <div class="section overfooter relative">
         <div class="container mx-auto text-center">
           <img
-            src="img/tentoonstellingcurve.svg"
-            class="tentext z-10 mx-auto"
+            src="img/bekijkhetzelflight.png"
+            class="bekijk bekijkup mx-auto"
           />
-          <img src="img/tentoonstelling_video.png" class="tenvideo mx-auto" />
+          <p class="locationlight mx-auto">
+            Paleisstraat 107, 1012 ZL Amsterdam
+          </p>
+          <img
+            src="img/bekijkhetzelflightupsidedown.png"
+            class="bekijk bekijkdown mx-auto"
+          />
+          <p class="copyrightlight">COPYRIGHT BYELLOW</p>
+        </div>
+      </div>
+      <div class="section tentoonstelling relative">
+        <div class="container mx-auto text-center">
+          <img src="img/tentoonstellingcurve.svg" class="tentext" />
+          <img src="img/tentoonstelling_video.png" class="tenvideo" />
           <p class="tenparagraph">
             Lorem iet, consectetur adipiscing elit. Tincidunt iaculis porta
             mauris sed. Suspendisse amet sed quam placerat tortor sit morbi nibh
@@ -82,19 +83,12 @@
           <img src="img/stippelpijl.png" class="stippelpijl" />
         </div>
       </div>
-
-      <div class="section footer relative">
-        <div class="container mx-auto text-center">
-          <img src="img/bekijkhetzelf.png" class="bekijk bekijkup mx-auto" />
-          <p class="location mx-auto">Paleisstraat 107, 1012 ZL Amsterdam</p>
-          <img
-            src="img/bekijkhetzelfupsidedown.png"
-            class="bekijk bekijkdown mx-auto"
-          />
-          <p class="copyright">COPYRIGHT BYELLOW</p>
-        </div>
-      </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -115,7 +109,13 @@
       new fullpage("#fullpage", {
         autoScrolling: true,
         navigation: true,
-        anchors: ["home", "over", "tentoonstelling", "footer"],
+        anchors: [
+          "overhome",
+          "overtextpage",
+          "overwork",
+          "overfooter",
+          "tentoonstelling",
+        ],
       });
     </script>
 

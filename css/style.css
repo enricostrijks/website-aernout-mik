@@ -15,40 +15,8 @@
 
 .container {
   margin: auto;
-  width: 1400px;
-}
-
-.hometext {
-  position: absolute;
-  font-family: Century;
-  text-align: center;
-  color: white;
-  font-size: 12vw;
-  z-index: 3;
-  opacity: 0.9;
-}
-
-.overtext {
-  position: absolute;
-  font-family: Century;
-  text-align: center;
-  color: white;
-  font-size: 10vw;
-  z-index: 3;
-  opacity: 0.9;
-  margin-right: 12rem;
-  top: 10%;
-}
-
-.tentext {
-  position: absolute;
-  top: 15%;
-  color: white;
-  z-index: 3;
-  opacity: 0.9;
-  text-transform: uppercase;
-  max-width: 95%;
-  height: auto;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .home {
@@ -63,10 +31,62 @@
   background-repeat: none;
 }
 
+.overfooter {
+  background: black;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.overhome {
+  background: black;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.overtextpage {
+  background: black;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.tentoonstellingvolcorona {
+  background: black;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.tentoonstellinghelp {
+  background-color: black;
+  background-image: url("../img/backgroundinneedofhelp.png");
+  background-size: cover;
+  background-repeat: none;
+}
+
+.tentoonstellinghelp .tentoonstellinghelp .fp-slide,
+.tentoonstellinghelp .fp-tableCell {
+  height: auto !important;
+}
+
+.overworks {
+  background: white;
+  background-size: cover;
+  background-repeat: none;
+}
+
 .tentoonstelling {
   background: url("../img/tentoonstelling_background.jpg");
   background-size: cover;
   background-repeat: none;
+}
+
+.credits {
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 70%,
+    #000000 30%,
+    #000000 100%
+  );
 }
 
 .footer {
@@ -75,52 +95,20 @@
   background-repeat: none;
 }
 
-.homebg {
-  position: relative;
-  z-index: 1;
-  max-width: 60%;
-  height: auto;
-  mix-blend-mode: screen;
-  opacity: 0.9;
-}
-
-.recordplayerhome {
-  top: 62%;
-  position: absolute;
-  z-index: 0;
-  max-width: 5%;
-  height: auto;
-}
-
-.overbg {
-  position: relative;
-  float: right;
-  margin-right: 0;
-  padding-right: 0;
-  z-index: 0;
-  max-width: 80%;
-  height: auto;
-}
-
-.overparagraph {
-  top: 34%;
-  right: 45%;
-  position: absolute;
-  font-family: PlexMono;
-  font-size: 1vw;
-  max-width: 35%;
+.hometext {
+  font-family: Century;
+  text-align: center;
   color: white;
-  text-align: left;
+  font-size: 165px;
+  opacity: 0.9;
 }
 
 .nav {
   top: 35%;
-  position: absolute;
-  display: inline;
   list-style-type: none;
   color: white;
   font-family: PlexMono;
-  font-size: 18.29px;
+  /* font-size: 18.29px; */
   cursor: pointer;
   z-index: 4;
 }
@@ -130,11 +118,57 @@
   color: white;
   opacity: 0.9;
   font-family: PlexMono;
-  font-size: 18.29px;
+  /* font-size: 18.29px; */
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.homebg {
+  position: absolute;
+  max-width: 60%;
+  height: auto;
+  mix-blend-mode: screen;
+  opacity: 0.9;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.overbg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -365px;
+  z-index: 0;
+}
+
+.overparagraph {
+  top: 38%;
+  right: 46%;
+  position: absolute;
+  font-family: PlexMono;
+  font-size: 1vw;
+  max-width: 35%;
+  color: white;
+  text-align: left;
+}
+
+.overtext {
+  position: relative;
+  font-family: Century;
+  text-align: center;
+  color: white;
+  font-size: 10vw;
+  margin-right: 1.2em;
+  margin-bottom: 1.9em;
+  opacity: 0.9;
+  z-index: 3;
 }
 
 .button {
-  position: absolute;
+  position: relative;
   background-color: #fff; /* Green */
   border: none;
   color: black;
@@ -149,8 +183,8 @@
 
 .readmorebtn {
   border-radius: 50px;
-  top: 70%;
-  left: 20%;
+  bottom: 18%;
+  margin-right: 6.5%;
   font-family: PlexSerif;
   font-weight: 700;
   text-transform: uppercase;
@@ -158,44 +192,77 @@
 
 .readmorebtnten {
   border-radius: 50px;
-  top: 85%;
-  left: 38%;
+  top: 14rem;
+  right: 10%;
   font-family: PlexSerif;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.tenvideo {
-  position: absolute;
-  transform-origin: middle;
-  transform: scale(0.7);
+.tentext {
+  position: relative;
+  color: white;
+  z-index: 3;
+  opacity: 0.9;
+  text-transform: uppercase;
   max-width: 95%;
   height: auto;
-  top: 10%;
+  top: 5%;
+}
+
+.overtextparagraph {
+  position: relative;
+  top: 29.8rem;
+  left: 30%;
+  font-family: PlexMono;
+  font-size: 1vw;
+  max-width: 60%;
+  color: white;
 }
 
 .tenparagraph {
-  top: 60%;
-  right: 45%;
-  position: absolute;
+  position: relative;
+  top: 23rem;
+  left: 20%;
   font-family: PlexMono;
-  font-size: 1vw;
+  font-size: 0.8vw;
   max-width: 30%;
   color: white;
   text-align: left;
 }
 
-.stippelpijl {
+.meisje {
+  position: relative;
+  top: -8rem;
+  right: 40%;
+}
+
+.tenvideo {
   position: absolute;
-  top: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  margin: auto;
+  transform-origin: middle;
   transform: scale(0.7);
-  max-width: 50%;
+  max-width: 95%;
   height: auto;
 }
 
+.stippelpijl {
+  position: relative;
+  top: 6rem;
+  transform: scale(0.7);
+  max-width: 50%;
+  height: auto;
+  margin: auto;
+  left: 6%;
+}
+
 .bekijk {
-  position: absolute;
   font-family: PlexSerif;
+  max-width: 100%;
 }
 
 .bekijkup {
@@ -210,67 +277,513 @@
   font-family: PlexSerif;
 }
 
+.locationlight {
+  font-family: PlexSerif;
+  color: white;
+}
+
 .copyright {
-  position: absolute;
+  position: relative;
   color: black;
-  bottom: 5%;
+  top: 15rem;
   font-family: PlexSerif;
 }
 
-#fullpage {
-  margin-left: -15px;
-  margin-right: -15px;
+.copyrightlight {
+  position: relative;
+  color: white;
+  top: 15rem;
+  font-family: PlexSerif;
 }
 
-#Record {
-  animation: 9s spin 2s infinite linear;
+.cirkel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
-@media only screen and (max-width: 900px) {
+.works {
+  position: relative;
+  font-family: PlexMono;
+  font-size: 38.28px;
+  font-weight: 400;
+}
+
+.worksup {
+  top: -1.5em;
+}
+
+.worksdown {
+  bottom: -1.5em;
+}
+
+.overhomepagebg {
+  z-index: 0;
+  max-width: 80%;
+  height: auto;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.tentoonstellinghometext {
+  position: absolute;
+  font-family: Century;
+  font-size: 20vw;
+  text-align: right;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.tentoonstellinghometext2 {
+  position: absolute;
+  font-family: Century;
+  font-size: 20vw;
+  text-align: left;
+  top: 20rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.wavesimage {
+  position: absolute;
+  max-width: 60%;
+  height: auto;
+  mix-blend-mode: screen;
+  opacity: 0.9;
+  right: 0%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.tentoonstellingcoronah2 {
+  position: relative;
+  font-family: PlexMono;
+  color: white;
+  float: left;
+  font-size: 7vw;
+  text-align: left;
+  top: 6rem;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.tentoonstellingcoronap {
+  position: relative;
+  color: white;
+  font-family: PlexMono;
+  max-width: 40%;
+  text-align: left;
+  right: 3%;
+  font-size: 1vw;
+}
+
+.inhelptext {
+  position: relative;
+  font-family: PlexSerif;
+  text-transform: uppercase;
+  max-width: 1px;
+  color: white;
+  font-size: 6vw;
+  top: 12rem;
+  right: 40rem;
+}
+
+.inhelpp {
+  position: relative;
+  font-family: PlexMono;
+  text-transform: uppercase;
+  max-width: 20%;
+  color: white;
+  font-size: 1vw;
+  left: 30rem;
+  bottom: 22rem;
+  text-align: left;
+}
+
+#helpplayer {
+  position: absolute;
+  bottom: 30rem;
+  right: 5rem;
+}
+
+.h1credits {
+  position: relative;
+  font-family: Century;
+  font-size: 8vw;
+  max-width: 55%;
+  left: -10rem;
+  top: 10rem;
+}
+
+.dankaan {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.creditstext {
+  position: relative;
+  top: 8rem;
+  right: 10rem;
+  font-family: PlexMono;
+  max-width: 20%;
+  font-size: 2vw;
+}
+
+.creditssidebar {
+  position: relative;
+  color: white;
+  float: right;
+  font-family: PlexMono;
+  list-style-type: none;
+  right: 8rem;
+  top: -45rem;
+  font-size: 1.5vw;
+}
+
+.creditssidebar li {
+  padding-top: 2rem;
+}
+
+.doitselftext {
+  position: relative;
+  z-index: 10;
+  color: #623300;
+  font-family: PlexSerif;
+  font-size: 11vw;
+  bottom: 20rem;
+}
+
+.doitselfp {
+  position: relative;
+  z-index: 10;
+  font-size: 2vw;
+  font-family: PlexMono;
+  bottom: 20rem;
+  right: 17.5rem;
+}
+
+#selfplayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.recordplayerhome {
+  max-width: 2rem;
+}
+
+@media only screen and (max-width: 639px) {
+  .hometext {
+    font-size: 3.9rem;
+  }
+  .recordplayerhome {
+    max-width: 2rem;
+  }
   .overbg {
-    max-width: 40%;
-    height: auto;
+    display: none;
+  }
+  .overparagraph {
+    top: 45%;
+  }
+  .overtext {
+    top: 75%;
   }
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (min-width: 1px) {
+  .meisje {
+    top: -10rem;
+    right: 0;
+    margin: auto;
+    max-width: 80%;
+  }
+  .overtextparagraph {
+    top: 30rem;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 1.8vw;
+  }
+  .hometext {
+    font-size: 3.9rem;
+  }
+  .recordplayerhome {
+    max-width: 2rem;
+  }
   .overbg {
-    max-width: 50%;
-    height: auto;
+    display: none;
   }
-  .bekijkup {
-    top: 25%;
+  .overparagraph {
+    top: 47%;
+    font-size: 0.2em;
   }
-
-  .bekijkdown {
-    bottom: 25%;
+  .overtext {
+    top: 75%;
   }
-  .tenvideo {
-    top: 5%;
-    max-width: 45%;
-    height: auto;
-  }
-  .tentext {
-    top: 10%;
-    max-width: 32%;
-    height: auto;
+  .readmorebtn {
+    right: 15%;
+    margin-top: 90%;
   }
   .tenparagraph {
-    right: 55%;
+    font-size: 0.2em;
+    top: 12rem;
   }
-  .readmorebtnten {
-    left: 28%;
+  .stippelpijl {
+    top: 2rem;
+  }
+  .tentoonstellinghometext {
+    position: absolute;
+    font-family: Century;
+    font-size: 20vw;
+    text-align: right;
+    top: 20rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .tentoonstellinghometext2 {
+    position: absolute;
+    font-family: Century;
+    font-size: 20vw;
+    text-align: left;
+    top: 40rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .tentoonstellingcoronap {
+    max-height: 200px;
+    max-width: 35%;
+    top: 4rem;
+    left: 1rem;
+  }
+  .wavesimage {
+    width: 15%;
+  }
+  .creditssidebar {
+    right: 0.5rem;
+    top: -10rem;
+    font-size: 1.5vw;
   }
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
+@media only screen and (min-width: 640px) {
+  .overtextparagraph {
+    top: 40rem;
+    font-size: 1.2vw;
   }
-  50% {
-    transform: rotate(180deg);
+  .hometext {
+    font-size: 5.3rem;
   }
-  100% {
-    transform: rotate(360deg);
+  .recordplayerhome {
+    max-width: 2rem;
+  }
+  .overbg {
+    display: none;
+  }
+  .overparagraph {
+    top: 45%;
+    font-size: 1vw;
+  }
+  .readmorebtn {
+    right: 20%;
+    margin-top: 0;
+  }
+  .tenparagraph {
+    font-size: 0.8vw;
+    top: 23rem;
+  }
+  .stippelpijl {
+    top: 6rem;
+  }
+  .wavesimage {
+    width: 18%;
+  }
+  .tentoonstellingcoronap {
+    max-height: 200px;
+    max-width: 35%;
+    left: 2rem;
+    top: 0;
+  }
+  .creditssidebar {
+    right: 2rem;
+    top: -10rem;
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hometext {
+    font-size: 6.3rem;
+  }
+  .recordplayerhome {
+    max-width: 2rem;
+  }
+  .overparagraph {
+    top: 41%;
+  }
+  .overbg {
+    max-width: 30%;
+    display: inline;
+  }
+  .readmorebtn {
+    right: 20%;
+  }
+  .wavesimage {
+    width: 20%;
+  }
+  .creditssidebar {
+    right: 2rem;
+    top: -10rem;
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hometext {
+    font-size: 8.3rem;
+  }
+  .recordplayerhome {
+    max-width: 4rem;
+  }
+  .overparagraph {
+    top: 41%;
+  }
+  .overbg {
+    max-width: 50%;
+  }
+  .readmorebtn {
+    right: 25%;
+  }
+  .creditssidebar {
+    right: 4rem;
+    top: -15rem;
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hometext {
+    font-size: 10.3rem;
+  }
+  .recordplayerhome {
+    max-width: 6rem;
+  }
+  .overtext {
+    right: 10%;
+  }
+  .overparagraph {
+    top: 40%;
+    right: 56%;
+  }
+  .readmorebtn {
+    right: 35%;
+  }
+  .wavesimage {
+    width: 24%;
+  }
+  .tentoonstellingcoronah2 {
+    top: 3rem;
+    left: 20%;
+  }
+  .creditssidebar {
+    right: 6rem;
+    top: -25rem;
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .meisje {
+    position: relative;
+    top: -8rem;
+    right: 40%;
+    margin: 0;
+  }
+  .hometext {
+    font-size: 12.3rem;
+  }
+  .recordplayerhome {
+    max-width: 10rem;
+  }
+  .overtext {
+    right: 0;
+  }
+  .overparagraph {
+    top: 38%;
+    right: 46%;
+  }
+  .overtextparagraph {
+    margin: 0;
+    text-align: left;
+    top: 29.8rem;
+    left: 30%;
+    font-size: 1vw;
+  }
+  .tentoonstellinghometext {
+    position: absolute;
+    font-family: Century;
+    font-size: 20vw;
+    text-align: right;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .tentoonstellinghometext2 {
+    position: absolute;
+    font-family: Century;
+    font-size: 20vw;
+    text-align: left;
+    top: 20rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .wavesimage {
+    width: 25%;
+  }
+
+  .tentoonstellingcoronah2 {
+    top: 12rem;
+    left: 20%;
+  }
+
+  .tentoonstellingcoronap {
+    left: 0;
+    right: 15%;
+    font-size: 0.75vw;
+  }
+
+  .creditssidebar {
+    right: 8rem;
+    top: -45rem;
+    font-size: 1.5vw;
   }
 }
