@@ -486,6 +486,14 @@
   z-index: 1;
 }
 
+.qrcode {
+  width: 2rem;
+}
+
+.qrcode:hover {
+  width: 20rem;
+}
+
 .recordplayerhome {
   max-width: 2rem;
 }
